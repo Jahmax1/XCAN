@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .verification-card {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .authentic {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .fake {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .verification-card img {
+    margin: 10px 0;
+  }
+  
+  .verification-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ad-carousel {
+    width: 100%;
+    text-align: center;
+    background: #e0e0e0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .ad-carousel a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tickets {
+    text-align: center;
+    padding: 20px;
+  }
