@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import VerificationCard from './components/VerificationCard';
-import AdCarousel from './components/AdCarousel';
-import Tickets from './components/Tickets';
+import MediaCarousel from './components/MediaCarousel';
+import Events from './components/Events';
+import Help from './components/Help';
+import Report from './components/Report';
+import Settings from './components/Settings';
+import Footer from './components/Footer';
+import './styles.css';
 import './App.css';
 
 function App() {
@@ -45,16 +50,19 @@ function App() {
             path="/"
             element={
               <div className="main-content">
-                <VerificationCard result={scanResult} onScan={handleScan} />
-                <AdCarousel />
+                <MediaCarousel />
+                <div className="scan-card-container">
+                  <VerificationCard result={scanResult} onScan={handleScan} />
+                </div>
               </div>
             }
           />
-          <Route path="/tickets" element={<Tickets />} />
-          <Route path="/help" element={<h1>Help (Coming Soon)</h1>} />
-          <Route path="/report" element={<h1>Report (Coming Soon)</h1>} />
-          <Route path="/settings" element={<h1>Settings (Coming Soon)</h1>} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/report" element={<Report />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
